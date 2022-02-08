@@ -7,6 +7,8 @@
     ;
     --third-font-color: #F5F4FA;
 }
+html {box-sizing: border-box;}
+*, *::before, *::after {box-sizing: inherit;}
 body { background-color: var(--font-color);
 color: var(--primary-text-color);
 
