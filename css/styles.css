@@ -18,8 +18,14 @@ letter-spacing: 0.03em;
 font-size: 14px;
 line-height: 1.7;}
 
-ul{ list-style: none;}
+.list { list-style: none;
+padding: 0;
+margin: 0;}
 a{text-decoration: none;}
+.container {width: 1230px;
+padding-left: 15px;
+padding-right: 15px;
+background-color: tomato;}
 
 /* header */
 .logo { color: var(--accent);
@@ -59,6 +65,8 @@ letter-spacing: 0.02em;
 /* hero */
 .hero{ background-color: var(--secondary-font-color);}
 .hero-title { color: var(--font-color);
+    margin-top: 0;
+    margin-bottom: 0;
     
     font-weight: 900;
     font-size: 44px;
@@ -99,6 +107,12 @@ letter-spacing: 0.02em;
 button {color: var(--font-color);
     background: var(--accent);
 cursor: pointer;
+border-radius: 4px;
+padding: 10px 32px;
+min-width: 200px;
+text-align: center;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border: 0;
 
 font-family: inherit;
 font-weight: bold;
@@ -106,9 +120,17 @@ font-size: 16px;
 line-height: 1.88;
 letter-spacing: 0.06em;
 }
+button:hover, button:focus {background: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 0;}
 
 .filter-button { color: var(--primary-text-color);
 background-color: var(--third-font-color);
+border-radius: 4px;
+display: inline-block;
+text-align: center;
+padding: 6px 22px;
+box-shadow: none;
 
 font-family: inherit;
 font-weight: 500;
@@ -117,7 +139,9 @@ line-height: 1.63;
 letter-spacing: 0.03em;}
 
 .filter-button:hover, .filter-button:focus{ color: var(--font-color);
-background-color: var(--accent);}
+background-color: var(--accent);
+border-radius: 4px;
+box-shadow: none;}
 
     /* footer */
     footer{ background-color: var(--secondary-font-color);}
