@@ -7,6 +7,8 @@
     ;
     --third-font-color: #F5F4FA;
 }
+h1, h2, h3, p{margin-top: 0;
+margin-bottom: 0;}
 html {box-sizing: border-box;}
 *, *::before, *::after {box-sizing: inherit;}
 body { background-color: var(--font-color);
@@ -21,6 +23,7 @@ line-height: 1.7;}
 .list { list-style: none;
 padding: 0;
 margin: 0;}
+.list-item {margin-bottom: 0;}
 a{text-decoration: none;}
 .container {width: 1230px;
 padding-left: 15px;
@@ -63,33 +66,44 @@ letter-spacing: 0.02em;
 .contacts a:hover, .contacts a:focus{color: var(--accent);}
 
 /* hero */
-.hero{ background-color: var(--secondary-font-color);}
+.hero{ background-color: var(--secondary-font-color);
+    text-align: center;
+padding-top: 200px;
+padding-bottom: 200px;}
 .hero-title { color: var(--font-color);
     margin-top: 0;
-    margin-bottom: 0;
-    
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
+    
     letter-spacing: 0.06em;
     text-transform: uppercase;}
 
 /* section */
+.section {
+padding-bottom: 94px;}
 .section-title {color: var(--primary-text-color);
+    margin-top: 0;
+    margin-bottom: 50px;
     
     font-weight: bold;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;}
 .section h3{
+    margin-bottom: 10px;
 
         font-weight: bold;
         font-size: 14px;
         line-height: 1.14;}
 
-.section p {color: var(--secondary-text-color);}
-.section-our-team {background-color: var(--third-font-color);}
+.section p {color: var(--secondary-text-color);
+margin-bottom: 0;
+margin-top: 0;}
+.section-our-team {background-color: var(--third-font-color);
+padding-top: 94px;
+padding-bottom: 94px;}
 .section-our-team p{color: var(--secondary-text-color);
     
     font-size: 16px;
@@ -97,6 +111,8 @@ letter-spacing: 0.02em;
     text-align: center;}
 
 .section-our-team h3{
+    margin-bottom: 10px;
+    margin-top: 30px;
 
     font-weight: 500;
     font-size: 16px;
@@ -145,9 +161,12 @@ box-shadow: none;}
 
     /* footer */
     footer{ background-color: var(--secondary-font-color);}
-    .adress {color: var(--font-color);}
+    footer .logo{margin-bottom: 20px;}
+    .adress {color: var(--font-color);
+    margin-bottom: 9px;}
     .adress:hover, .adress:focus{color: var(--accent);}
-    .contacts-footer {color: #FFFFFF99;}
+    .contacts-footer {color: #FFFFFF99;
+    margin-bottom: 9px;}
     .contacts-footer:hover, .contacts-footer:focus{color: var(--accent);}
     address{font-style: normal;}
     /* porfolio */
