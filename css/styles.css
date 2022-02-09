@@ -10,7 +10,7 @@
 h1, h2, h3, p{margin-top: 0;
 margin-bottom: 0;}
 html {box-sizing: border-box;}
-*, *::before, *::after {box-sizing: inherit;}
+header{border-bottom: 1px solid #ECECEC;}
 body { background-color: var(--font-color);
 color: var(--primary-text-color);
 margin: 0;
@@ -28,7 +28,7 @@ a{text-decoration: none;}
 .container {width: 1230px;
 padding-left: 15px;
 padding-right: 15px;
-background-color: tomato;}
+}
 
 /* header */
 .logo { color: var(--accent);
