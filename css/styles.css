@@ -19,6 +19,7 @@ font-family: roboto, sans-serif;
 letter-spacing: 0.03em;
 font-size: 14px;
 line-height: 1.7;}
+img{display: block;}
 
 .list { list-style: none;
 padding: 0;
@@ -31,7 +32,14 @@ padding-right: 15px;
 }
 
 /* header */
+.main-nav {display: flex;
+align-items: center;
+}
+
 .logo { color: var(--accent);
+    margin-top: 24px;
+    margin-bottom: 25px;
+
 
 font-family: raleway;
 font-weight: bold;
@@ -55,7 +63,13 @@ line-height: 1.19;}
 .site-nav .current{
     color: var(--accent);
 }
-.contacts a{
+.site-nav {display: flex;}
+.site-nav .item {margin-right: 50px;
+display: block;
+margin-top: 32px;
+margin-bottom: 32px;}
+.site-nav .item:last-child {margin-right: 0;}
+.contacts-list a{
     color: var(--secondary-text-color);
 
     font-weight: 500;
@@ -63,7 +77,13 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 }
-.contacts a:hover, .contacts a:focus{color: var(--accent);}
+.contacts-list a:hover, .contacts-list a:focus{color: var(--accent);}
+.contacts-list {display: flex;
+list-style: none;
+padding-left: 0;}
+.contacts-list .item + .item { margin-left: 50px;}
+.contacts-list .item {margin-top: 32px;
+    margin-bottom: 32px;}
 
 /* hero */
 .hero{ background-color: var(--secondary-font-color);
