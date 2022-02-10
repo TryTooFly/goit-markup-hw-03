@@ -160,6 +160,7 @@ padding-bottom: 94px;}
 margin-bottom: 0;
 margin-top: 0;}
 .section-our-team {background-color: var(--third-font-color);
+
 padding-top: 94px;
 padding-bottom: 94px;}
 .section-our-team p{color: var(--secondary-text-color);
@@ -219,8 +220,22 @@ border-radius: 4px;
 box-shadow: none;}
 
     /* footer */
+    .footer {display: flex;
+    justify-content:left;
+    flex-direction: column;}
+    .list-footer{list-style: none;
+    display: flex;
+justify-content:left;
+flex-direction: column;
+margin-top: 0;
+margin-bottom: 0;
+padding-bottom: 60px;
+padding-left: 0;}
+.list-footer li:not(:last-child){margin-bottom: 9px;}
     footer{ background-color: var(--secondary-font-color);}
-    footer .logo{margin-bottom: 20px;}
+    footer .logo{margin-bottom: 20px;
+        margin-top: 0;
+    padding-top: 60px;}
     .adress {color: var(--font-color);
     margin-bottom: 9px;}
     .adress:hover, .adress:focus{color: var(--accent);}
@@ -228,7 +243,9 @@ box-shadow: none;}
     margin-bottom: 9px;}
     .contacts-footer:hover, .contacts-footer:focus{color: var(--accent);}
     address{font-style: normal;}
+
     /* porfolio */
+
     .list-photo{ display: flex;
     flex-wrap: wrap;
     list-style: none;
